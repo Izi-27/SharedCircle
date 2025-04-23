@@ -1,0 +1,7 @@
+# SharedCircle Architecture Overview
+
+Introducing SharedCircle on NERO Chain! Without getting too technical, here's the vision: SharedCircle's vision is to bridge the gap between Web2 familiarity and Web3 innovation, empowering anyone to create, engage, and thrive in a borderless digital ecosystem; free from gas fees and complex onboarding, all made possible by NERO's Paymaster. This is the high-level plan for Wave 1, with development to follow in Wave 2.
+
+## System Overview
+
+haredCircle* is a decentralized content subscription platform built on *NERO Chain*, designed to allow creators to monetize exclusive content while offering users a seamless Web2-like experience, thanks to the *Paymaster (AA-platform)* integration.
