@@ -4,4 +4,60 @@ Introducing SharedCircle on NERO Chain! Without getting too technical, here's th
 
 ## System Overview
 
-haredCircle* is a decentralized content subscription platform built on *NERO Chain*, designed to allow creators to monetize exclusive content while offering users a seamless Web2-like experience, thanks to the *Paymaster (AA-platform)* integration.
+SharedCircle is a decentralized content subscription platform built on NERO Chain, designed to allow creators to monetize exclusive content while offering users a seamless Web2-like experience, thanks to the Paymaster (AA-platform) integration. The main system components are listed below:
+
+1. **Frontend (User Interface)**
+   - Built with React/Next.js
+   - Handles:
+     - Creator registration & content upload
+     - Subscriber content access & token-based access validation
+     - Wallet & social logins
+     - Gasless transaction prompts
+
+2. **Backend API Layer**
+   - Powered by Node.js/Express
+   - Manages:
+     - Authentication/session management
+     - Creator dashboards and analytics
+     - Subscription and payment metadata
+     - Integration with smart contracts
+
+3. **Smart Contracts on NERO Chain**
+   - Written in Solidity
+   - Functions:
+     - Tiered subscription models (Basic, Premium)
+     - Access control via token/NFT ownership
+     - Secure payment processing
+     - Logs transactions and interactions on-chain
+
+4. **Paymaster (AA-Platform) Integration**
+   - Core to user experience:
+     - Sponsors gas fees (gasless UX)
+     - Supports custom token payments
+     - Implements account abstraction logic
+     - Managed via no-code dashboard on NERO
+
+5. **Content Storage (Off-chain)**
+   - Stored on IPFS/Arweave
+   - Ensures:
+     - Decentralized and censorship-resistant content
+     - Hashes referenced in smart contracts for validation
+
+6. **Analytics & Notifications (Optional)**
+   - Tools: Google Analytics, Email/Telegram
+   - Features:
+     - Track user engagement
+     - Alert users of new uploads or subscription changes
+
+This setup perfectly meets the 30% AA Integration criteria by seemlessly blending Web3 with Web2. A visual diagram in canva will be added in wave2.
+
+## Why This Works
+
+- **Simplicity**: Users interact through a Web2-like interface with no wallet or gas complexity.
+- **Scalability**: Modular design allows the app to grow with new features or services over time.
+- **Security**: Smart contracts enforce transparent payments and access control.
+- **Decentralization**: Content is hosted via IPFS/Arweave, not centralized servers.
+- **Flexibility**: Custom gas logic through NERO Paymaster supports various tokens and UX flows.
+- **User-Centric**: Built for non-crypto natives, ensuring wider adoption and better retention.
+
+Wave 1 planning complete. Wave 2 will focus on coding contracts and frontend development. More details in [README.md](README.md) and [USER_FLOW.md](USER_FLOW.md)
