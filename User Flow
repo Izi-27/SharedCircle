@@ -1,3 +1,83 @@
 # SharedCircle User Flow
 
 Hey, I’m Izi, and this is how SharedCircle will work for users. I want judges and the NERO community to see exactly what it feels like to use this Web3-powered subscription and content-sharing platform. It’s designed to be simple, gas-free, and creator-first, so anyone can engage, support, and grow with their favorite communities.
+
+## The Vision
+The vision is about redefining how creators and communities connect, share, and thrive in the Web3 era — without the complexity that usually holds people back.
+
+## Usert Flow Guide
+1. **Explore & Discover**
+- User visits SharedCircle via web or mobile.
+- Browses a feed of featured creators or communities.
+- Clicks into a creator profile to see their exclusive content and subscription tiers.
+
+2. **Quick Signup / Connect**
+- User signs up via email or social login (wallet creation happens in the background via AA).
+- A NERO-compatible smart wallet is generated for the user (gasless UX).
+
+3. **Choose Subscription**
+- User selects a subscription tier (monthly or annual).
+- Payment is made in any token (Paymaster handles token-to-gas logic).
+- No visible wallet popups or transaction signing required — it’s Web2-smooth.
+
+4. **Access Premium Content**
+- Once payment is confirmed, access to gated content (videos, posts, files, links) is unlocked.
+- Content is stored via IPFS or Arweave, with access permissions handled by smart contracts.
+
+5. **Engage with Creator / Community**
+- User can *comment*, join gated chatrooms, or attend virtual events.
+- Creators can airdrop perks, NFTs, or offer shoutouts to loyal subscribers.
+
+6. **Manage Account**
+- Users can view their active subscriptions, update tokens, or cancel anytime.
+- Everything is managed from a simple dashboard — no Web3 literacy required.
+
+7. **Share & Grow**
+- Users share their favorite creators to friends.
+- Referrals can be incentivized via smart contract-based affiliate/reward systems.
+
+## User Pathway
+
+Meet Ada — a new user on SharedCircle
+
+1. **Discover a Creator (1–2 minutes)**
+Ada clicks a link on X (Twitter) to a creator’s SharedCircle profile. She's intrigued by the exclusive content and community perks listed.
+
+2. **Sign Up with Email (30 seconds)**
+Ada signs up using her Google account. A smart wallet is created in the background. No seed phrases or extra steps needed.
+
+3. **Subscribe to a Tier (1 minute)**
+Ada selects the $2/month tier. She pays using USDT, even though the dApp runs on NERO — the Paymaster swaps and handles gas invisibly.
+
+4. **Access Exclusive Content (Instant)**
+Her dashboard updates instantly. Ada now sees the creator’s premium posts, behind-the-scenes videos, and a private discussion board.
+
+5. **Join Community Chat (1 minute)**
+Ada joins the gated group chat via a link generated in her dashboard. She's welcomed by other fans and the creator.
+
+6. **Manage Profile or Cancel Anytime (30 seconds)**
+Ada checks her dashboard. She can upgrade, cancel, or switch payment tokens with just a few taps.
+
+**Total Time: 5 minutes**
+
+# Benefits
+
+- **Simplicity:** Users interact with SharedCircle like they would with Netflix 
+- **Flexibility:** Any token, the Paymaster handles gas logic. It makes subscribing accessible and stress-free.
+- **Scalability:** A dashboard to manage subscriptions, drop content, and engage fans.
+- **Built-in Community:** Gated access, exclusive content, and group chats boost creator engagement.
+- **Zero Friction Onboarding:** One-click signup and instant wallet creation. No seed phrases or MetaMask popups. It's perfect for non-crypto natives
+- **Retention & Reward Ready:** Easy renewals, airdrop perks, and affiliate systems mean people come back and bring others.
+
+# Tech Stack
+**Sign Up/Login:** NERO AA Wallets (Account Abstraction), -Firebase Auth or Web3Auth (optional for social login)
+**Wallet Generation:** NERO AA SDKs (auto wallet creation on signup)
+**Subscription Access:** Smart Contracts (Solidity): Manages subscription tiers and access rights
+**Gasless Transactions:** NERO Paymaster: Sponsors gas or lets users pay with any token
+**Creator Dashboard:** React/Next.js frontend -Backend APIs via Node.js/Firebase/Supabase
+**Content Storage:** IPFS / Livepeer for video or gated content -Firebase Storage or Supabase for basic media
+**Notifications:** Push Protocol / XMTP (optional: for messages like renewals, content drops) 
+**Analytics / Logs:** Supabase / LogRocket / Firebase Analytics 
+**Community Gating:** On-chain NFT/token-based access <br> - Gated Telegram, Farcaster, Discord APIs
+
+This flow’s ready to scale in Wave 2 with an MVP. Check out [README.md](README.md) for the vision!
